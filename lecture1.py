@@ -17,18 +17,18 @@ print (w is u) # this is a result of memory optimisation. The output will be tru
 
 t = 500
 y = 500
-t is y  # this will throw up false because it is not optimised
+print (t is y)  # this will throw up false because it is not optimised
 
 a + b
-float (a+b) #keeps the decimal point
-int (a+b) # chops off the decimal
+print (float (a+b)) #keeps the decimal point
+print (int (a+b)) # chops off the decimal
 
 a += 5 # adds 5 to the exisitng value of a. Can be useful in assigning counters for loops
 
 c = "how are ya' doing"
-c.upper()
+print (c.upper())
 
-c.split("are")
+print (c.split("are"))
 
 #Python Container and Indexing
 
@@ -63,7 +63,7 @@ print (c) # the * sign creates a list
 print(c[0]) #returns the first element which is indexed as 0
 
 d = [1, 2, 3, 4, 5, 'aa', True, False, 'yes', ['hi', 'bye'], None]
-print (d[2:4]) #returns everything from position 3 to position 5
+print (d[2:4]) #returns everything from position 3 to position 5. Check on the openess of the range
 
 print (d[:]) #returns the entire list. Is useful to assign the set of elements to a new memory location
 print (d[::2]) # returns every second term starting from index 0
