@@ -69,4 +69,18 @@ print (d[:]) #returns the entire list. Is useful to assign the set of elements t
 print (d[::2]) # returns every second term starting from index 0
 print (d[::-2]) #reversing the list
 
+#overwriting a list
+d[3] = "overwrote"
+print (d)
+d[3:5] = ['z', 'q'] # replaces 3rd and 4th indexed number to z and q.
+
+# Dictionary
+
+x = {'me':4, 'you':10, 'them':None} # there is no number indexing but we assign the positions with a name. Such as, position of 4 is called 'me'
+print ( x['me'])
+
+x['who?'] = 42
+print (x)
+
+# Using a dictionary for scraping through a webpage can be an example
 
